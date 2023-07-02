@@ -22,22 +22,22 @@ function Navbar() {
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#home">
-              Home <span class="sr-only">(current)</span>
+              Strona główna <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">
-              About
+              O mnie
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">
-              Projects
+              Moje projekty
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">
-              Contact
+              Kontakt
             </a>
           </li>
         </ul>

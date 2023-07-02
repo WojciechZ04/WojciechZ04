@@ -1,6 +1,12 @@
 body {
   background-color: white;
 }
+img {
+  width: 200px;
+  height: 200px;
+  border: 1rem;
+  border-color: black;
+}
 
 .container {
   padding: 10% 10% 20%
