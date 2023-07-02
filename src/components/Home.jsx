@@ -2,9 +2,9 @@ import React from "react";
 
 function Home() {
 	return (
-		<header className="App-header">
-        	<h1>Hello there!</h1>
-    	</header>
+		<div className="container" id="home">
+			<h2>Home</h2>
+		</div>
 	)
 }
 

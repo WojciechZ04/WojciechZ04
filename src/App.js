@@ -1,21 +1,22 @@
-import './App.css';
-import React from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './pages/Home';
-import Projects from './pages/Projects';
+import "./App.css";
+import React from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/WojciechZ04' element={<Home />} />
-          <Route path='/WojciechZ04/projects' element={<Projects />} />
-        </Routes>
-        <Footer />
-    </Router>
+    <div>
+      <Navbar />
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 
