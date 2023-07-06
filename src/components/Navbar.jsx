@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark background fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark background" style={{position: "sticky"}}>
       <a class="navbar-brand" href="/WojciechZ04">
         Wojciech Zieliński
       </a>

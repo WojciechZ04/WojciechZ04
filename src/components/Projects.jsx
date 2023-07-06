@@ -1,9 +1,10 @@
 import React from "react";
 import Project from "./Project";
+import { Container } from "@mui/material";
 
 function Projects() {
 	return(
-		<div className="container" id="projects">
+		<Container id="projects" sx={{pt: "50px"}}>
 			<h2>Moje projekty</h2>
 			<p>Poniżej przedstawiam kilka większych projektów, które wykonałem w celu zwiększania swoich umiejętności.</p>
 			<Project 
@@ -25,7 +26,7 @@ function Projects() {
 			more="https://github.com/WojciechZ04"
 			/>
 			<p>Więcej projektów znajdziesz <a href="https://github.com/WojciechZ04">tutaj</a>.</p>
-		</div>
+		</Container>
 	)
 }
 

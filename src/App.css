@@ -1,5 +1,8 @@
 body {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 img {
   width: 200px;
@@ -14,6 +17,12 @@ h2 {
   font-size: 3rem;
   text-align: center;
   padding: 10px 0;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  width: 100%;
 }
 
 .container {
@@ -65,4 +74,8 @@ h2 {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   transform-origin: center;
+}
+
+#content {
+  flex-grow: 1;
 }

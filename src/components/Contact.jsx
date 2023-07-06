@@ -1,10 +1,11 @@
 import React from "react";
+import { Container } from "@mui/material";
 
 function Contact() {
 	return (
-		<div className="container" id="contact">
+		<Container id="contact" sx={{pt: "50px"}}>
 			<h2>Kontakt ze mną</h2>
-		</div>
+		</Container>
 	)
 }
 
