@@ -15,8 +15,11 @@ function App() {
       <Sidebar />
       <Home />
       <About />
+      <div class="divider div-transparent div-arrow-down"></div>
       <Projects />
+      <div class="divider div-transparent div-arrow-down"></div>
       <Contact />
+      <div class="divider div-transparent div-arrow-down"></div>
       <Footer />
     </div>
   );

@@ -1,5 +1,14 @@
 import React from "react";
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, Button } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#a9a9a9',
+    },
+  },
+});
 
 function About() {
   return (
@@ -19,7 +28,11 @@ function About() {
             programowaniu aplikacji internetowych. Jeśli chciałbyś dowiedzieć
             się wiecej, lub masz jakieś pytania, zapraszam do kontaktu!
           </p>
-          <button href="#contact">Kontakt</button>
+          <ThemeProvider theme={theme}>
+            <Button color="primary" variant="contained" href="#contact">
+              Kontakt
+            </Button>
+          </ThemeProvider>
         </Grid>
         <Grid item sx={{ width: "50%" }}>
           <h3>Umiejętności</h3>

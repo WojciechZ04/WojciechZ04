@@ -6,7 +6,8 @@ function Project(props) {
     <Container sx={{ py: "50px" }}>
       <Grid container spacing={2} justifyContent="center" alignItems="center">
         <Grid item sx={{ width: "30%" }}>
-          <img src={props.img} alt="WeatherApp"></img>
+         
+          <img src={props.img} alt="weatherAppLogo" />
         </Grid>
         <Grid item sx={{ width: "70%" }}>
           <h3>{props.title}</h3>

@@ -5,8 +5,7 @@ body {
   min-height: 100vh;
 }
 img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
   border-style: solid;
   border-radius: 10px;
   border-width: 2px;
@@ -42,7 +41,7 @@ nav {
 }
 
 .skill {
-  background-color: darkgray;
+  background-color: #a9a9a9;
   padding: 5px 15px;
   margin: 5px;
   border-radius: 5px;
@@ -81,6 +80,12 @@ nav {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   transform-origin: center;
+}
+
+.text {
+  text-align: center;
+  font-size: 30px;
+  
 }
 
 #content {
