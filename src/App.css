@@ -109,3 +109,11 @@ nav {
 	height: 1px;
 	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
 }
+
+.content {
+  background-color: #333;
+  color: #f5f5f5;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}

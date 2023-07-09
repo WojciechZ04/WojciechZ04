@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "./Project";
 import { Container } from "@mui/material";
-import Image1 from "./weatherApp.jpg";
+import Image1 from "../images/weatherApp.jpg";
 
 function Projects() {
   return (
