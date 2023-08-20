@@ -3,9 +3,9 @@ import React from "react";
 function Home() {
   return (
     <section id="home">
-      <h1>Cześć, nazywam się Wojciech Zieliński</h1>
+      <h1>Hi, I'm Wojciech Zieliński</h1>
       <div class="divider div-transparent div-arrow-down"></div>
-      <p>Jestem początkującym programistą front- i backendowym.</p>
+      <p>A Frontend and Backend Junior Developer of Web Applications</p>
     </section>
   );
 }

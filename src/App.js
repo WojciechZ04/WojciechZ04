@@ -19,7 +19,6 @@ function App() {
       <Projects />
       <div class="divider div-transparent div-arrow-down"></div>
       <Contact />
-      <div class="divider div-transparent div-arrow-down"></div>
       <Footer />
     </div>
   );

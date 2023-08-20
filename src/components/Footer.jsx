@@ -16,7 +16,7 @@ const theme = createTheme({
 
 function Footer() {
   return (
-    <div className="content">
+    <div className="content" id="footer">
       <ThemeProvider theme={theme}>
         <div className="socials">
           <IconButton
@@ -29,10 +29,10 @@ function Footer() {
             <GitHubIcon />
           </IconButton>
         </div>
-        <p>
-          <EmailIcon color="primary" />
-          zielinski.wojciech04@gmail.com
-        </p>
+        <div className="email">
+          <EmailIcon color="primary" sx={{ mx: "10px" }}/>
+          <p>zielinski.wojciech04@gmail.com</p>
+        </div>
 
         <p>Copyright © 2023 | Made by Wojciech Zieliński</p>
       </ThemeProvider>

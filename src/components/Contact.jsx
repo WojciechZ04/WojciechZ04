@@ -26,14 +26,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
-	<h2>Kontakt ze mną</h2>
-	<p>Wyślij wiadomść za pomocą poniższego formularza</p>
+    <div className="contact" id="contact">
+      <h2>Contact Me</h2>
+      <p>Send a message using the form below</p>
       <form className="form" ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
+        <label>First and Last Name</label>
+        <input type="text" name="user_name" autoComplete="off"/>
         <label>Email</label>
-        <input type="email" name="user_email" />
+        <input type="email" name="user_email"/>
         <label>Message</label>
         <textarea name="message" />
         <input type="submit" value="Send" />

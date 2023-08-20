@@ -12,7 +12,7 @@ function Project(props) {
         <Grid item sx={{ width: "70%" }}>
           <h3>{props.title}</h3>
           <p>{props.description}</p>
-          <a href={props.more}>Więcej o projekcie</a>
+          <a href={props.more}>More about this project</a>
         </Grid>
       </Grid>
     </Container>
