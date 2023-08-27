@@ -10,6 +10,24 @@ const theme = createTheme({
   },
 });
 
+let skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Node.js",
+  "React",
+  "SQL Databases",
+  "noSQL Databases",
+  "VSC env",
+  "jQuery",
+  "EJS",
+  "MUI",
+  "RESTful API",
+  "Bootstrap",
+  "Git",
+];
+let skillsEarly = ["Angular", "Typescript"];
+
 function About() {
   return (
     <Container id="about" sx={{ pt: "50px" }}>
@@ -24,7 +42,7 @@ function About() {
           <p>
             I am a self-proclaimed programmer constantly improving my skills in
             terms of programming and technology. I really enjoy extending my
-            knowledge in this categories. I'm learing from courses on Udemy and
+            knowledge in this categories. I'm learning from courses on Udemy and
             by creating my own projects (more info about my projects below). If
             you would like to know more or have any questions, feel free to
             contact me!
@@ -37,23 +55,21 @@ function About() {
         </Grid>
         <Grid item sx={{ width: "50%" }}>
           <h3>Skills</h3>
+          <div className="skills" style={{ justifyContent: "center" }}>
+            <div className="skill">Advanced level of skill</div>
+            <div className="skill notLearned">Beginner level of skill</div>
+          </div>
+
+          <hr />
+          
           <div className="skills">
-            <div className="skill">HTML</div>
-            <div className="skill">CSS</div>
-            <div className="skill">JavaScript</div>
-            <div className="skill">Node.js</div>
-            <div className="skill">React</div>
-            <div className="skill">SQL</div>
-            <div className="skill">noSQL</div>
-            <div className="skill">VSC env</div>
-            <div className="skill">jQuery</div>
-            <div className="skill">EJS</div>
-            <div className="skill">MUI</div>
-            <div className="skill">RESTful API</div>
-            <div className="skill">Bootstrap</div>
-            <div className="skill">Git</div>
-            <div className="skill notLearned">Angular</div>
-            <div className="skill notLearned">Typescript</div>
+            {skills.map((skill, index) => {
+              return <div key={index} className="skill">{skill}</div>;
+            })}
+
+            {skillsEarly.map((skill, index) => {
+              return <div key={index} className="skill notLearned">{skill}</div>;
+            })}
           </div>
         </Grid>
       </Grid>

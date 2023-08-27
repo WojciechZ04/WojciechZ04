@@ -15,9 +15,9 @@ function App() {
       <Sidebar />
       <Home />
       <About />
-      <div class="divider div-transparent div-arrow-down"></div>
+      <div className="divider div-transparent div-arrow-down"></div>
       <Projects />
-      <div class="divider div-transparent div-arrow-down"></div>
+      <div className="divider div-transparent div-arrow-down"></div>
       <Contact />
       <Footer />
     </div>
