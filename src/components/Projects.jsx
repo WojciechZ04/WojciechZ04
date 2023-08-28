@@ -2,6 +2,8 @@ import React from "react";
 import Project from "./Project";
 import { Container } from "@mui/material";
 import Image1 from "../images/weatherApp.jpg";
+import Image2 from "../images/Keeper.jpg";
+import Image3 from "../images/ToDoList.jpg";
 
 let skills1 = ['HTML', 'CSS', 'JavaScript', 'node.js', 'express.js', 'React', 'MUI', 'API']
 let skills2 = ['HTML', 'CSS', 'JavaScript', 'React']
@@ -24,7 +26,8 @@ function Projects() {
         skills={skills1}
       />
       <Project
-        img="https://static.vecteezy.com/system/resources/previews/000/552/199/original/gears-vector-icon.jpg"
+        // img="https://static.vecteezy.com/system/resources/previews/000/552/199/original/gears-vector-icon.jpg"
+        img={Image2}
         title="Keeper"
         description="
         The 'Keeper' app was inspired by the Google Keep app. It is used to quickly create notes where you can write down your ideas. The main focus of this project was to improve skills on React framework."
@@ -32,7 +35,7 @@ function Projects() {
         skills={skills2}
       />
       <Project
-        img="https://static.vecteezy.com/system/resources/previews/000/552/199/original/gears-vector-icon.jpg"
+        img={Image3}
         title="To Do List"
         description="A simple interactive to-do list app. As befits a to-do list, the application has the ability to add your own tasks to the list and delete those that have been completed. It is also possible to create your own lists by extending the url with the name of the list (e.g. adding /work will create a list with the title 'work'). The project uses a database hosted with MongoDB Atlas. The ejs language was used to create the application."
         more="https://github.com/WojciechZ04/to_do_list"
