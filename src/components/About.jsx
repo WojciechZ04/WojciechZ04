@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "@emotion/styled";
 import { Container, Grid, Button } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -28,6 +29,22 @@ let skills = [
 ];
 let skillsEarly = ["Angular", "Typescript"];
 
+const CustomGridContainer = styled(Grid)({
+  display: "flex",
+  flexDirection: "row",
+  "@media (max-width: 767px)": {
+    display: "flex",
+    flexDirection: "column",
+  },
+});
+
+const CustomGridItem = styled(Grid)({
+  width: "50%",
+  "@media (max-width: 767px)": {
+    width: "100%",
+  },
+});
+
 function About() {
   return (
     <Container id="about" sx={{ pt: "50px" }}>
@@ -36,8 +53,8 @@ function About() {
         Here are more information about me, what I do and my current skills used
         to create web apps.
       </p>
-      <Grid container spacing={2}>
-        <Grid item sx={{ width: "50%" }}>
+      <CustomGridContainer container spacing={2}>
+        <CustomGridItem item>
           <h3>Get to know me!</h3>
           <p>
             I am a self-proclaimed programmer constantly improving my skills in
@@ -48,12 +65,17 @@ function About() {
             contact me!
           </p>
           <ThemeProvider theme={theme}>
-            <Button color="primary" variant="contained" href="#contact">
+            <Button
+              color="primary"
+              variant="contained"
+              href="#contact"
+              sx={{ margin: "0 auto", display: "block", width: "fit-content" }}
+            >
               Contact
             </Button>
           </ThemeProvider>
-        </Grid>
-        <Grid item sx={{ width: "50%" }}>
+        </CustomGridItem>
+        <CustomGridItem item>
           <h3>Skills</h3>
           <div className="skills" style={{ justifyContent: "center" }}>
             <div className="skill">Advanced level of skill</div>
@@ -61,18 +83,26 @@ function About() {
           </div>
 
           <hr />
-          
+
           <div className="skills">
             {skills.map((skill, index) => {
-              return <div key={index} className="skill">{skill}</div>;
+              return (
+                <div key={index} className="skill">
+                  {skill}
+                </div>
+              );
             })}
 
             {skillsEarly.map((skill, index) => {
-              return <div key={index} className="skill notLearned">{skill}</div>;
+              return (
+                <div key={index} className="skill notLearned">
+                  {skill}
+                </div>
+              );
             })}
           </div>
-        </Grid>
-      </Grid>
+        </CustomGridItem>
+      </CustomGridContainer>
     </Container>
   );
 }

@@ -1,19 +1,42 @@
 import React from "react";
+import styled from "@emotion/styled";
 import { Grid, Container } from "@mui/material";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
+const CustomGridContainer = styled(Grid)({
+  display: "flex",
+  flexDirection: "row",
+  "@media (max-width: 1200px)": {
+    display: "flex",
+    flexDirection: "column",
+  },
+});
+
+const CustomGridItem = styled(Grid)({
+  textAlign: 'center',
+  "@media (max-width: 1200px)": {
+    width: "100%",
+  },
+});
+
 function Project(props) {
   const skills = props.skills;
   return (
-    <Container sx={{ py: "50px" }}>
-      <Grid container spacing={2} justifyContent="center" alignItems="center">
-        <Grid item sx={{ width: "30%" }}>
+    <Container>
+      <CustomGridContainer
+        container
+        spacing={2}
+        justifyContent="center"
+        alignItems="center"
+        sx={{ py: "50px" }}
+      >
+        <CustomGridItem item sx={{ width: "30%" }}>
           <img src={props.img} alt="appLogo" />
-        </Grid>
-        <Grid item sx={{ width: "70%" }}>
+        </CustomGridItem>
+        <CustomGridItem item sx={{ width: "70%" }}>
           <h3>{props.title}</h3>
           <p>{props.description}</p>
           <Accordion
@@ -45,12 +68,16 @@ function Project(props) {
                 })}
               </div>
               <p>
-                Complete documentation available on <a href={props.more} sx={{ textAlign: "center" }}> {props.more} </a>
+                Complete documentation available on{" "}
+                <a href={props.more} sx={{ textAlign: "center" }}>
+                  {" "}
+                  {props.more}{" "}
+                </a>
               </p>
             </AccordionDetails>
           </Accordion>
-        </Grid>
-      </Grid>
+        </CustomGridItem>
+      </CustomGridContainer>
     </Container>
   );
 }
