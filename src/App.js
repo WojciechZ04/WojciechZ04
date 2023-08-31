@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Home />
       <About />
       <div className="divider div-transparent div-arrow-down"></div>

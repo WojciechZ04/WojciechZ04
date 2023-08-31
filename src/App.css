@@ -21,7 +21,7 @@ h2 {
   font-family: 'Ysabeau SC', sans-serif;
   font-size: 3rem;
   text-align: center;
-  padding: 10px 0;
+  margin: -20px 0 20px 0;
 }
 
 nav {
@@ -116,7 +116,7 @@ nav {
 .text {
   text-align: center;
   font-size: 30px;
-  
+  padding-top: 50px;
 }
 
 #content {
@@ -184,4 +184,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #424242;
+}
+
+.section {
+  padding: 120px 0;
 }

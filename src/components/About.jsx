@@ -47,13 +47,13 @@ const CustomGridItem = styled(Grid)({
 
 function About() {
   return (
-    <Container id="about" sx={{ pt: "50px" }}>
+    <Container id="about" className="section">
       <h2>About Me</h2>
       <p>
         Here are more information about me, what I do and my current skills used
         to create web apps.
       </p>
-      <CustomGridContainer container spacing={2}>
+      <CustomGridContainer container spacing={2} sx={{pt: "50px"}}>
         <CustomGridItem item>
           <h3>Get to know me!</h3>
           <p>

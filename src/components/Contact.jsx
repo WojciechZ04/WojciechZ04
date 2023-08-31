@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <Container id="contact" sx={{ pt: "50px" }}>
+    <Container id="contact" className="section">
       <div className="contact" >
         <h2>Contact Me</h2>
         <p>Send a message using the form below</p>

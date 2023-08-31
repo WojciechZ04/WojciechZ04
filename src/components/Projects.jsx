@@ -11,7 +11,7 @@ let skills3 = ['HTML', 'CSS', 'JavaScript', 'SQL Database', 'MongoDB']
 
 function Projects() {
   return (
-    <Container id="projects" sx={{ pt: "50px" }}>
+    <Container id="projects" className="section">
       <h2>My Projects</h2>
       <p>
         Here you will find some of my projects that I recently finished or I am
