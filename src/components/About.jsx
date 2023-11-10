@@ -26,8 +26,10 @@ let skills = [
   "RESTful API",
   "Bootstrap",
   "Git",
+  "Angular",
+  "Typescript",
 ];
-let skillsEarly = ["Angular", "Typescript"];
+let skillsEarly = ["Cloud Engineering"];
 
 const CustomGridContainer = styled(Grid)({
   display: "flex",
@@ -53,7 +55,7 @@ function About() {
         Here are more information about me, what I do and my current skills used
         to create web apps.
       </p>
-      <CustomGridContainer container spacing={2} sx={{pt: "50px"}}>
+      <CustomGridContainer container spacing={2} sx={{ pt: "50px" }}>
         <CustomGridItem item>
           <h3>Get to know me!</h3>
           <p>
