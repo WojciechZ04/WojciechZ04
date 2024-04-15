@@ -11,9 +11,9 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <div>
-      <Navbar />
+      <Navbar/>
+      <Home className="home" />
       {/* <Sidebar /> */}
-      <Home />
       <About />
       <div className="divider div-transparent div-arrow-down"></div>
       <Projects />

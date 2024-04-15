@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Navbar() {
+  const [navBackground, setNavBackground] = useState(false);
+
+  const navRef = React.useRef();
+  navRef.current = navBackground;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 50;
+      if (navRef.current !== show) {
+        setNavBackground(show);
+      }
+    };
+    document.addEventListener('scroll', handleScroll);
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  let navbarClass = 'navbar navbar-expand-lg navbar-dark background';
+  if (navBackground) {
+    navbarClass += ' navbar-scrolled';
+  }
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark background" style={{position: "sticky"}}>
+    <nav className={navbarClass}>
       <a className="navbar-brand" href="/WojciechZ04">
         Wojciech Zieliński
       </a>
