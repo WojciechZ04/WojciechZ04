@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Ysabeau Office', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 img {
   width: 300px;
@@ -14,11 +14,11 @@ img {
 }
 
 h1 {
-  font-family: 'Ysabeau SC', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
-  font-family: 'Ysabeau SC', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   text-align: center;
   margin: -20px 0 20px 0;
@@ -37,14 +37,17 @@ a {
 
 #home {
   background-color: #f0f0f0;
-  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png"); /*Brick wall*/
-  /* background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png"); Diamonds */
+  background-image: url("https://images.pond5.com/abstract-blue-geometric-background-moving-footage-076294250_prevstill.jpeg"); 
   width: 100%;
-  justify-content: center;
+  height: 70vh;
+  display: flex; /* Add this */
+  flex-direction: column;
+  justify-content: center; /* Modify this */
   padding: 100px 0;
   text-align: center;
   box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-  font-weight: 600;
+  font-weight: 300;
+  color: #f0f0f0;
 }
 
 #home p {
@@ -138,7 +141,7 @@ nav {
 	right: 5%;
 	width: 90%;
 	height: 1px;
-	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+	background-image: linear-gradient(to right, transparent, rgb(255, 255, 255), transparent);
 }
 
 .content {
