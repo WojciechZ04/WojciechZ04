@@ -1,7 +1,6 @@
 import "./App.css";
 import React from "react";
 import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -13,7 +12,6 @@ function App() {
     <div>
       <Navbar/>
       <Home className="home" />
-      {/* <Sidebar /> */}
       <About />
       <div className="divider div-transparent div-arrow-down"></div>
       <Projects />
