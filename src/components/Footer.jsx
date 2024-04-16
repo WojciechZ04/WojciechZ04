@@ -14,6 +14,8 @@ const theme = createTheme({
   },
 });
 
+const currentYear = new Date().getFullYear();
+
 function Footer() {
   return (
     <div className="content" id="footer">
@@ -34,7 +36,7 @@ function Footer() {
           <p>zielinski.wojciech04@gmail.com</p>
         </div>
 
-        <p>Copyright © 2023 | Made by Wojciech Zieliński</p>
+        <p>Copyright © {currentYear} | Made by Wojciech Zieliński</p>
       </ThemeProvider>
     </div>
   );
