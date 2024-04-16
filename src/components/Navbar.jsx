@@ -13,20 +13,20 @@ function Navbar() {
         setNavBackground(show);
       }
     };
-    document.addEventListener('scroll', handleScroll);
+    document.addEventListener("scroll", handleScroll);
     return () => {
-      document.removeEventListener('scroll', handleScroll);
+      document.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  let navbarClass = 'navbar navbar-expand-lg navbar-dark background';
+  let navbarClass = "navbar navbar-expand-lg navbar-dark background";
   if (navBackground) {
-    navbarClass += ' navbar-scrolled';
+    navbarClass += " navbar-scrolled";
   }
 
   return (
     <nav className={navbarClass}>
-      <a className="navbar-brand" href="/WojciechZ04">
+      <a className="" href="/WojciechZ04">
         Wojciech Zieliński
       </a>
       <button
@@ -44,23 +44,24 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="#home">
-              Home <span className="sr-only">(current)</span>
+            <a className="list" href="#home">
+              {/* Home <span className="sr-only">(current)</span> */}
+              <span>Home</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#about">
-              About Me
+            <a className="list" href="#about">
+              <span>About</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#projects">
-              My Projects
+            <a className="list" href="#projects">
+              <span>Projects</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#contact">
-              Contact
+            <a className="list" href="#contact">
+              <span>Contact</span>
             </a>
           </li>
         </ul>
