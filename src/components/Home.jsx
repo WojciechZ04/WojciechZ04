@@ -18,7 +18,7 @@ function Home() {
         }).then(() => {
             setInit(true);
         });
-    }, []);
+    }, [init]);
 
   return (
     <div id="home">
