@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkme_app=self.webpackChunkme_app||[]).push([[7581],{7581:function(e,n,t){t.r(n),t.d(n,{ShapeManager:function(){return p}});var a=t(5671),r=t(3144),u=new Map,p=function(){function e(n){(0,a.Z)(this,e),this._engine=n}return(0,r.Z)(e,[{key:"addShapeGenerator",value:function(e,n){this.getShapeGenerator(e)||u.set(e,n)}},{key:"getShapeGenerator",value:function(e){return u.get(e)}},{key:"getSupportedShapeGenerators",value:function(){return u.keys()}}]),e}()}}]);
+//# sourceMappingURL=7581.f2f272d3.chunk.js.map
