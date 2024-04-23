@@ -1,12 +1,12 @@
 import "./App.css";
 import React from "react";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Skills from "./components/Skills";
+import Navbar from "./components/Shared/Navbar";
+import Footer from "./components/Shared/Footer";
+import Home from "./components/Hero/Home";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       <Navbar />
       <Home className="home" />
       <About />
+      <div className="divider div-transparent div-arrow-down"></div>
       <Skills />
       <div className="divider div-transparent div-arrow-down"></div>
       <Projects />

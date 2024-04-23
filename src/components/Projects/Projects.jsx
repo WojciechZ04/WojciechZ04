@@ -1,10 +1,10 @@
 import React from "react";
 import Project from "./Project";
 import { Container } from "@mui/material";
-import Image1 from "../images/weatherApp.jpg";
-import Image2 from "../images/Keeper.jpg";
-import Image3 from "../images/ToDoList.jpg";
-import Image4 from "../images/RecipeBook.jpg";
+import Image1 from "../../images/weatherApp.jpg";
+import Image2 from "../../images/Keeper.jpg";
+import Image3 from "../../images/ToDoList.jpg";
+import Image4 from "../../images/RecipeBook.jpg";
 
 let skills1 = ['HTML', 'CSS', 'JavaScript', 'node.js', 'express.js', 'React', 'MUI', 'API']
 let skills2 = ['HTML', 'CSS', 'JavaScript', 'React']

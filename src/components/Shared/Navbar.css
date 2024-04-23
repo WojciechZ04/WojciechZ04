@@ -1,0 +1,79 @@
+nav { 
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.navbar {
+	position: fixed;
+	transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+	box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0);
+}
+
+.navbar a {
+	color: white;
+	transition: color 0.5s ease;
+}
+
+.navbar-scrolled {
+	background-color: white !important;
+	color: black !important;
+	box-shadow: 0 25px 20px -20px rgba(245, 234, 234, 0.4);
+}
+
+
+.navbar-scrolled a {
+	color: black;
+}
+
+.navbar-scrolled .list:before {
+	background: rgb(0, 0, 0);	
+}
+
+.navbar-scrolled .list:hover {
+	color: rgb(255, 255, 255);
+}
+
+
+.list {
+	background: transparent;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	display: inline-block;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 600;
+	width: auto;
+	text-transform: uppercase;
+	cursor: pointer;
+	transform: skew(-21deg);
+}
+
+.list::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 100%;
+	left: 0;
+	background: rgb(255, 255, 255);
+	opacity: 0;
+	z-index: -1;
+	transition: all 0.5s;
+  }
+  
+.list:hover {
+	color: #000;
+}
+  
+.list:hover::before {
+	left: 0;
+	right: 0;
+	opacity: 1;
+}
+
+span {
+	display: inline-block;
+	transform: skew(21deg);
+}

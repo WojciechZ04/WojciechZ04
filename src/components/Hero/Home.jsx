@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
+import "./Hero.css";
 import Particles, {initParticlesEngine} from "@tsparticles/react";
 import {loadFull} from "tsparticles";
-import particlesOptions from "../assets/particles.json";
+import particlesOptions from "../../assets/particles.json";
 
 
 function Home() {

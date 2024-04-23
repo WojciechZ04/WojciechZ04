@@ -1,5 +1,6 @@
-import { Container } from "@mui/material";
 import React from "react";
+import "./Skills.css";
+import { Container } from "@mui/material";
 
 let skills = [
 	"HTML",
@@ -23,7 +24,7 @@ let skills = [
 
 function Skills() {
   return (
-    <Container>
+    <Container className="section">
       <h3>Skills</h3>
       <div className="skills" style={{ justifyContent: "center" }}>
         <div className="skill">Advanced level of skill</div>

@@ -22,163 +22,13 @@ h2 {
   margin: -20px 0 20px 0;
 }
 
-nav { 
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.navbar {
-  position: fixed;
-  transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
-  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0);
-}
-
-.navbar a {
-  color: white;
-  transition: color 0.5s ease;
-}
-
-.navbar-scrolled {
-  background-color: white !important;
-  color: black !important;
-  box-shadow: 0 25px 20px -20px rgba(245, 234, 234, 0.4);
-}
-
-
-.navbar-scrolled a {
-  color: black;
-}
-
-.navbar-scrolled .list:before {
-  background: rgb(0, 0, 0);
-}
-
-.navbar-scrolled .list:hover {
-  color: rgb(255, 255, 255);
-}
-
-
-.list {
-  background: transparent;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  display: inline-block;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 600;
-  width: auto;
-  text-transform: uppercase;
-  cursor: pointer;
-  transform: skew(-21deg);
-}
-
-#particles {
-  position: absolute;
-  z-index: -100;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#about {
-  background-color: white;
-}
-
-span {
-  display: inline-block;
-  transform: skew(21deg);
-}
-
-.list::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 100%;
-  left: 0;
-  background: rgb(255, 255, 255);
-  opacity: 0;
-  z-index: -1;
-  transition: all 0.5s;
-}
-
-.list:hover {
-  color: #000;
-}
-
-.list:hover::before {
-  left: 0;
-  right: 0;
-  opacity: 1;
-}
-
-
-#home {
-  position: relative;
-  top: 0;
-  /* background-color: #f0f0f0; */
-  /* background-image: url("https://images.pond5.com/abstract-blue-geometric-background-moving-footage-076294250_prevstill.jpeg");  */
-  width: 100%;
-  height: 70vh;
-  display: flex; /* Add this */
-  flex-direction: column;
-  justify-content: center; /* Modify this */
-  text-align: center;
-  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-  font-weight: 300;
-  color: #f0f0f0;
-}
-
-#home p {
-  font-size: 20px;
-}
-
-#footer {
-  margin-top: 50px;
-}
-
-.email {
-  justify-content: center;
-  display: flex;
-}
-
-.skills {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /* justify-content: center; */
-}
-
-.skill {
-  background-color: #a9a9a9;
-  padding: 5px 15px;
-  margin: 5px;
-  border-radius: 5px;
-}
-
-.notLearned {
-  background-color: ghostwhite;
-}
-
-.text {
-  text-align: center;
-  font-size: 30px;
-  padding-top: 50px;
-}
-
-#content {
-  flex-grow: 1;
-}
-
 .divider
 {
 	position: relative;
 	margin: 25px 0;
 	height: 1px;
 }
+
 .div-transparent:before
 {
 	content: "";
@@ -188,52 +38,7 @@ span {
 	right: 5%;
 	width: 90%;
 	height: 1px;
-	background-image: linear-gradient(to right, transparent, rgb(255, 255, 255), transparent);
-}
-
-.content {
-  background-color: #333;
-  color: #f5f5f5;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-}
-
-.contact {
-  display: flex; 
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;
-}
-
-.form {
-  display: flex; 
-  flex-direction: column;
-  width: 400px;
-}
-
-input[type=text], input[type=email], textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #969696;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #424242;
+	background-image: linear-gradient(to right, transparent, rgb(22, 22, 22), transparent);
 }
 
 .section {

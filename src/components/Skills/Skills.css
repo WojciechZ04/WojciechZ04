@@ -1,0 +1,23 @@
+.skills {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* justify-content: center; */
+}
+  
+.skill {
+	background-color: #a9a9a9;
+	padding: 5px 15px;
+	margin: 5px;
+	border-radius: 5px;
+}
+  
+.notLearned {
+	background-color: ghostwhite;
+}
+
+.text {
+	text-align: center;
+	font-size: 30px;
+	padding-top: 50px;
+}
