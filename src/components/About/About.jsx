@@ -30,14 +30,9 @@ const CustomGridItem = styled(Grid)({
 function About() {
   return (
     <Container id="about" className="section">
-      <h2>About Me</h2>
-      <p>
-        Here are more information about me, what I do and my current skills used
-        to create web apps.
-      </p>
       <CustomGridContainer container spacing={1} sx={{ pt: "50px" }}>
         <CustomGridItem item>
-          <h3>Get to know me!</h3>
+          <h2>Get to know me!</h2>
           <p>
             I am a self-proclaimed programmer constantly improving my skills in
             terms of programming and technology. I really enjoy extending my

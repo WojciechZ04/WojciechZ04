@@ -25,7 +25,7 @@ let skills = [
 function Skills() {
   return (
     <Container className="section">
-      <h3>Skills</h3>
+      <h2>Skills</h2>
       <div className="skills" style={{ justifyContent: "center" }}>
         <div className="skill">Advanced level of skill</div>
         <div className="skill notLearned">Beginner level of skill</div>
