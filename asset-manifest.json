@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WojciechZ04/static/css/main.98347fc6.css",
-    "main.js": "/WojciechZ04/static/js/main.56d72839.js",
+    "main.css": "/WojciechZ04/static/css/main.56f86588.css",
+    "main.js": "/WojciechZ04/static/js/main.5ac9979a.js",
     "static/js/607.5a6ec3d6.chunk.js": "/WojciechZ04/static/js/607.5a6ec3d6.chunk.js",
     "static/js/6225.ab4b23cc.chunk.js": "/WojciechZ04/static/js/6225.ab4b23cc.chunk.js",
     "static/js/7858.ba11c317.chunk.js": "/WojciechZ04/static/js/7858.ba11c317.chunk.js",
@@ -102,8 +102,8 @@
     "static/media/RecipeBook.jpg": "/WojciechZ04/static/media/RecipeBook.208ff946148da11880a2.jpg",
     "static/media/weatherApp.jpg": "/WojciechZ04/static/media/weatherApp.e438b5a2f321fcf222cf.jpg",
     "index.html": "/WojciechZ04/index.html",
-    "main.98347fc6.css.map": "/WojciechZ04/static/css/main.98347fc6.css.map",
-    "main.56d72839.js.map": "/WojciechZ04/static/js/main.56d72839.js.map",
+    "main.56f86588.css.map": "/WojciechZ04/static/css/main.56f86588.css.map",
+    "main.5ac9979a.js.map": "/WojciechZ04/static/js/main.5ac9979a.js.map",
     "607.5a6ec3d6.chunk.js.map": "/WojciechZ04/static/js/607.5a6ec3d6.chunk.js.map",
     "6225.ab4b23cc.chunk.js.map": "/WojciechZ04/static/js/6225.ab4b23cc.chunk.js.map",
     "7858.ba11c317.chunk.js.map": "/WojciechZ04/static/js/7858.ba11c317.chunk.js.map",
@@ -201,7 +201,7 @@
     "5666.ccb1da9e.chunk.js.map": "/WojciechZ04/static/js/5666.ccb1da9e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98347fc6.css",
-    "static/js/main.56d72839.js"
+    "static/css/main.56f86588.css",
+    "static/js/main.5ac9979a.js"
   ]
 }
