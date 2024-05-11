@@ -25,9 +25,15 @@ function Navbar() {
     navbarClass += " navbar-scrolled";
   }
 
+  function handleScroll(event, targetId) {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <nav className={navbarClass}>
-      <a className="" href="/WojciechZ04">
+      <a className="" href="/WojciechZ04" style={{textDecoration: 'none'}}>
         Wojciech Zieliński
       </a>
       <button
@@ -45,23 +51,23 @@ function Navbar() {
       <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
-            <a className="list" href="#home">
+            <a className="list" href="#home" onClick={(event) => handleScroll(event, 'home')}>
               {/* Home <span className="sr-only">(current)</span> */}
               <span>Home</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="list" href="#about">
+            <a className="list" href="#about" onClick={(event) => handleScroll(event, 'about')}>
               <span>About</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="list" href="#projects">
+            <a className="list" href="#projects" onClick={(event) => handleScroll(event, 'projects')}>
               <span>Projects</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="list" href="#contact">
+            <a className="list" href="#contact" onClick={(event) => handleScroll(event, 'contact')}>
               <span>Contact</span>
             </a>
           </li>
