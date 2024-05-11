@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WojciechZ04/static/css/main.fffb43b3.css",
-    "main.js": "/WojciechZ04/static/js/main.e050127c.js",
+    "main.js": "/WojciechZ04/static/js/main.6ae67aaf.js",
     "static/js/607.5a6ec3d6.chunk.js": "/WojciechZ04/static/js/607.5a6ec3d6.chunk.js",
     "static/js/6225.ab4b23cc.chunk.js": "/WojciechZ04/static/js/6225.ab4b23cc.chunk.js",
     "static/js/7858.ba11c317.chunk.js": "/WojciechZ04/static/js/7858.ba11c317.chunk.js",
@@ -103,7 +103,7 @@
     "static/media/weatherApp.jpg": "/WojciechZ04/static/media/weatherApp.e438b5a2f321fcf222cf.jpg",
     "index.html": "/WojciechZ04/index.html",
     "main.fffb43b3.css.map": "/WojciechZ04/static/css/main.fffb43b3.css.map",
-    "main.e050127c.js.map": "/WojciechZ04/static/js/main.e050127c.js.map",
+    "main.6ae67aaf.js.map": "/WojciechZ04/static/js/main.6ae67aaf.js.map",
     "607.5a6ec3d6.chunk.js.map": "/WojciechZ04/static/js/607.5a6ec3d6.chunk.js.map",
     "6225.ab4b23cc.chunk.js.map": "/WojciechZ04/static/js/6225.ab4b23cc.chunk.js.map",
     "7858.ba11c317.chunk.js.map": "/WojciechZ04/static/js/7858.ba11c317.chunk.js.map",
@@ -202,6 +202,6 @@
   },
   "entrypoints": [
     "static/css/main.fffb43b3.css",
-    "static/js/main.e050127c.js"
+    "static/js/main.6ae67aaf.js"
   ]
 }
