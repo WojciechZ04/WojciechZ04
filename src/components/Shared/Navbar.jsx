@@ -20,9 +20,11 @@ function Navbar() {
     };
   }, []);
 
-  let navbarClass = "navbar navbar-expand-lg navbar-dark background";
+  let navbarClass = "navbar navbar-expand-lg background";
   if (navBackground) {
-    navbarClass += " navbar-scrolled";
+    navbarClass += " navbar-scrolled navbar-light";
+  } else {
+    navbarClass += " navbar-transparent navbar-dark";
   }
 
   function handleScroll(event, targetId) {
@@ -45,28 +47,28 @@ function Navbar() {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon text-black"></span>
       </button>
 
-      <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item active">
+          <li className="nav-item active ml-auto">
             <a className="list" href="#home" onClick={(event) => handleScroll(event, 'home')}>
               {/* Home <span className="sr-only">(current)</span> */}
               <span>Home</span>
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item ml-auto">
             <a className="list" href="#about" onClick={(event) => handleScroll(event, 'about')}>
               <span>About</span>
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item ml-auto">
             <a className="list" href="#projects" onClick={(event) => handleScroll(event, 'projects')}>
               <span>Projects</span>
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item ml-auto">
             <a className="list" href="#contact" onClick={(event) => handleScroll(event, 'contact')}>
               <span>Contact</span>
             </a>

@@ -21,7 +21,6 @@ nav {
 	box-shadow: 0 25px 20px -20px rgba(245, 234, 234, 0.4);
 }
 
-
 .navbar-scrolled a {
 	color: black;
 }
@@ -73,7 +72,7 @@ nav {
 	opacity: 1;
 }
 
-span {
+.list span {
 	display: inline-block;
 	transform: skew(21deg);
 }
