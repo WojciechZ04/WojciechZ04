@@ -1,4 +1,5 @@
 nav { 
+	padding: 0 3rem !important;
 	top: 0;
 	width: 100%;
 	z-index: 1000;
@@ -13,12 +14,13 @@ nav {
 .navbar a {
 	color: white;
 	transition: color 0.5s ease;
+	font-size: 20px;
 }
 
 .navbar-scrolled {
 	background-color: white !important;
 	color: black !important;
-	box-shadow: 0 25px 20px -20px rgba(245, 234, 234, 0.4);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust as needed */
 }
 
 .navbar-scrolled a {
