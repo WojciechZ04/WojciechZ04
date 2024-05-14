@@ -14,9 +14,7 @@ function App() {
       <Navbar />
       <Home className="home" />
       <About />
-      <div className="divider div-transparent div-arrow-down"></div>
       <Skills />
-      <div className="divider div-transparent div-arrow-down"></div>
       <Projects />
       <div className="divider div-transparent div-arrow-down"></div>
       <Contact />
