@@ -1,26 +1,27 @@
 import React from "react";
 import "./Skills.css";
 import { Container } from "@mui/material";
+import skillsData from "./SkillsData";
 
-let skills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "Node.js",
-  "React",
-  "SQL Databases",
-  "noSQL Databases",
-  "VSC env",
-  "jQuery",
-  "EJS",
-  "MUI",
-  "RESTful API",
-  "Bootstrap",
-  "Git",
-  "Angular",
-  "Typescript",
-];
-let skillsEarly = ["Cloud Engineering"];
+// let skills = [
+//   "HTML",
+//   "CSS",
+//   "JavaScript",
+//   "Node.js",
+//   "React",
+//   "SQL Databases",
+//   "noSQL Databases",
+//   "VSC env",
+//   "jQuery",
+//   "EJS",
+//   "MUI",
+//   "RESTful API",
+//   "Bootstrap",
+//   "Git",
+//   "Angular",
+//   "Typescript",
+// ];
+// let skillsEarly = ["Cloud Engineering"];
 
 function Skills() {
   return (
@@ -35,18 +36,10 @@ function Skills() {
         <hr />
 
         <div className="skills">
-          {skills.map((skill, index) => {
+          {skillsData.map((skill, index) => {
             return (
               <div key={index} className="skill">
-                {skill}
-              </div>
-            );
-          })}
-
-          {skillsEarly.map((skill, index) => {
-            return (
-              <div key={index} className="skill notLearned">
-                {skill}
+                {skill.name}
               </div>
             );
           })}
