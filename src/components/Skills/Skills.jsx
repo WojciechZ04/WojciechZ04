@@ -39,7 +39,14 @@ function Skills() {
           {skillsData.map((skill, index) => {
             return (
               <div key={index} className="skill">
-                {skill.name}
+                <div className="skillName">{skill.name}</div>
+                <div class="progress-segment">
+                  <div class="item red-common"></div>
+                  <div class="item orange-common"></div>
+                  <div class="item yellow-common"></div>
+                  <div class="item green-light-common"></div>
+                  <div class="item green-common"></div>
+                </div>
               </div>
             );
           })}
