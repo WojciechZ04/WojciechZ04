@@ -28,6 +28,12 @@ const CustomGridItem = styled(Grid)({
 });
 
 function About() {
+  function handleScroll(event, targetId) {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <Container id="about" className="section">
       <CustomGridContainer container spacing={1} sx={{ pt: "50px" }}>
@@ -45,7 +51,7 @@ function About() {
             <Button
               color="primary"
               variant="contained"
-              href="#contact"
+              onClick={(event) => handleScroll(event, 'contact')}
               sx={{ margin: "0 auto", display: "block", width: "fit-content" }}
             >
               Contact
