@@ -14,11 +14,11 @@
 	background-color: #a9a9a9;
 	margin: 5px;
 	width: 200px;
+	border-radius: 5px;
 }
 
 .skillName {
 	padding: 5px 15px;
-	border-radius: 5px;
 }
   
 .notLearned {
@@ -43,33 +43,38 @@
   width: 100%;
   background-color: lightgray;
   height: 8px;
-
 }
 
-  .item.red-common {
+.item.red-common {
     background: red !important;
-  }
+}
 
-  .item.gold-common {
+.item.gold-common {
     background: gold !important;
-  }
+}
 
-  .item.orange-common {
+.item.orange-common {
     background: orange !important;
-  }
+}
 
-  .item.yellow-common {
+.item.yellow-common {
     background: yellow !important;
-  }
+}
 
-  .item.yellow-light-common {
+.item.yellow-light-common {
     background: yellowgreen !important;
-  }
+}
 
-  .item.green-light-common {
+.item.green-light-common {
     background: greenyellow !important;
-  }
+}
 
-  .item.green-common {
+.item.green-common {
     background: green !important;
-  }
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+	border: none;
+}

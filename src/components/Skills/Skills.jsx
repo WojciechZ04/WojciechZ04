@@ -39,7 +39,13 @@ function Skills() {
           {skillsData.map((skill, index) => {
             return (
               <div key={index} className="skill">
-                <div className="skillName">{skill.name}</div>
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <img
+                    className="icon"
+                    src={skill.icon}
+                    alt={skill.name}/>
+                  <div className="skillName">{skill.name}</div>
+                </div>
                 <div class="progress-segment">
                   <div class="item red-common"></div>
                   <div class="item orange-common"></div>
