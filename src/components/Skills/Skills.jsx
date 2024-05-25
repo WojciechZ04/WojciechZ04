@@ -27,11 +27,7 @@ function Skills() {
   return (
     <div className="skillsSection">
       <Container className="section">
-        <h2>Skills</h2>
-        <div className="skills" style={{ justifyContent: "center" }}>
-          <div className="skill">Advanced level of skill</div>
-          <div className="skill notLearned">Beginner level of skill</div>
-        </div>
+        <h2>Skills</h2> 
 
         <hr />
 

@@ -37,7 +37,7 @@ function About() {
   return (
     <Container id="about" className="section">
       <CustomGridContainer container spacing={1} sx={{ pt: "50px" }}>
-        <CustomGridItem item>
+        <CustomGridItem item xs={12} sm={8}>
           <h2>Get to know me!</h2>
           <p>
             I am a self-proclaimed programmer constantly improving my skills in
@@ -58,9 +58,9 @@ function About() {
             </Button>
           </ThemeProvider>
         </CustomGridItem>
-        {/* <CustomGridItem item>
-          <h2>PHOTO OF ME</h2>
-        </CustomGridItem> */}
+        <CustomGridItem item xs={12} sm={4}>
+          <img src="https://img.freepik.com/premium-photo/portrait-successful-software-developer-eyeglasses-standing-with-arms-crossed-smiling-camera-office_249974-4145.jpg"/>
+        </CustomGridItem>
       </CustomGridContainer>
     </Container>
   );
