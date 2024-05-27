@@ -16,7 +16,6 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <div className="divider div-transparent div-arrow-down"></div>
       <Contact />
       <Footer />
     </div>

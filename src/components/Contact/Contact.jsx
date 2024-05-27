@@ -28,8 +28,8 @@ const Contact = () => {
   };
 
   return (
-    <Container id="contact" className="section">
-      <div className="contact" >
+    <Container id="contact" className="section" maxWidth={false}>
+      <div className="contact">
         <h2>Contact Me</h2>
         <p>Send a message using the form below</p>
         <form className="form" ref={form} onSubmit={sendEmail}>
