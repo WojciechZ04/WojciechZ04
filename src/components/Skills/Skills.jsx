@@ -43,11 +43,11 @@ function Skills() {
                   <div className="skillName">{skill.name}</div>
                 </div>
                 <div class="progress-segment">
-                  <div class="item red-common"></div>
-                  <div class="item orange-common"></div>
-                  <div class="item yellow-common"></div>
-                  <div class="item green-light-common"></div>
-                  <div class="item green-common"></div>
+                  <div className={`item ${skill.level >= 1 ? 'red-common' : 'grey-common'}`}></div>
+                  <div className={`item ${skill.level >= 2 ? 'orange-common' : 'grey-common'}`}></div>
+                  <div className={`item ${skill.level >= 3 ? 'yellow-common' : 'grey-common'}`}></div>
+                  <div className={`item ${skill.level >= 4 ? 'green-light-common' : 'grey-common'}`}></div>
+                  <div className={`item ${skill.level >= 5 ? 'green-common' : 'grey-common'}`}></div>
                 </div>
               </div>
             );
