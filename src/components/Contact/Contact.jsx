@@ -34,11 +34,11 @@ const Contact = () => {
         <p>Send a message using the form below</p>
         <form className="form" ref={form} onSubmit={sendEmail}>
           <label>First and Last Name</label>
-          <input type="text" name="user_name" autoComplete="off" />
+          <input type="text" name="user_name" autoComplete="off" required/>
           <label>Email</label>
-          <input type="email" name="user_email" />
+          <input type="email" name="user_email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
           <label>Message</label>
-          <textarea name="message" />
+          <textarea name="message" required/>
           <input type="submit" value="Send" />
         </form>
       </div>
