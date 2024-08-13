@@ -20,7 +20,7 @@ nav {
 .navbar-scrolled {
 	background-color: white !important;
 	color: #333 !important;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust as needed */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-scrolled a {

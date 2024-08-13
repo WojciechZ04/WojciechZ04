@@ -17,9 +17,9 @@
   "defaultThemes": {},
   "delay": 0,
   "fullScreen": { "enable": false, "zIndex": 0 },
-  "detectRetina": true,
+  "detectRetina": false,
   "duration": 0,
-  "fpsLimit": 120,
+  "fpsLimit": 60,
   "interactivity": {
     "detectsOn": "window",
     "events": {
