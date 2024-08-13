@@ -56,7 +56,7 @@ function Project(props) {
               }}
             ></AccordionSummary>
             <AccordionDetails>
-              <p>[More about the project]</p>
+              {/* <p>[More about the project]</p> */}
               <h4>Skills used in this project:</h4>
               <div className="skills">
                 {skills.map((skill, index) => {

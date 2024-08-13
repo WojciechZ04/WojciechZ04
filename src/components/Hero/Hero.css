@@ -14,9 +14,9 @@
 	/* background-image: url("https://images.pond5.com/abstract-blue-geometric-background-moving-footage-076294250_prevstill.jpeg");  */
 	width: 100%;
 	height: 70vh;
-	display: flex; /* Add this */
+	display: flex;
 	flex-direction: column;
-	justify-content: center; /* Modify this */
+	justify-content: center;
 	text-align: center;
 	box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
 	font-weight: 300;
@@ -26,6 +26,11 @@
 #home p {
 	font-size: 20px;
 }
+
+#home h1, #home p {
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+  
 
 .white::before
 {

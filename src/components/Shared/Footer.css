@@ -9,4 +9,20 @@
 .email {
 	justify-content: center;
 	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	gap: 10px;
+}
+
+.email:hover {
+	cursor: pointer;
+	color: #004ea3;
+}
+
+.email p {
+	margin: 0;
+}
+
+.notification {
+	color: #727272;
 }

@@ -19,16 +19,16 @@ nav {
 
 .navbar-scrolled {
 	background-color: white !important;
-	color: black !important;
+	color: #333 !important;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust as needed */
 }
 
 .navbar-scrolled a {
-	color: black;
+	color: #333;
 }
 
 .navbar-scrolled .list:before {
-	background: rgb(0, 0, 0);	
+	background: #333;	
 }
 
 .navbar-scrolled .list:hover {
@@ -65,7 +65,7 @@ nav {
   }
   
 .list:hover {
-	color: #000;
+	color: #333;
 }
   
 .list:hover::before {
