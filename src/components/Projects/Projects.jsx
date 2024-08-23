@@ -21,6 +21,7 @@ function Projects() {
               description={project.description}
               more={project.github}
               skills={project.skills}
+              page={project.page}
             />
             <hr />
           </div>

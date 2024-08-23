@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Grid, Container } from "@mui/material";
+import { Grid, Container, Button, Tooltip } from "@mui/material";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -16,7 +16,7 @@ const CustomGridContainer = styled(Grid)({
 });
 
 const CustomGridItem = styled(Grid)({
-  textAlign: 'center',
+  textAlign: "center",
   "@media (max-width: 1200px)": {
     width: "100%",
   },
@@ -24,6 +24,13 @@ const CustomGridItem = styled(Grid)({
 
 function Project(props) {
   const skills = props.skills;
+
+  const handleButtonClick = () => {
+    if (props.page !== "/") {
+      window.open(props.page, "_blank");
+    }
+  };
+
   return (
     <Container>
       <CustomGridContainer
@@ -39,6 +46,26 @@ function Project(props) {
         <CustomGridItem item sx={{ width: "70%" }}>
           <h3>{props.title}</h3>
           <p>{props.description}</p>
+          <Tooltip
+            title={props.page === "/" ? "Sorry, this page is not available right now" : ""}
+            arrow
+          >
+            <span>
+              <Button
+                color="primary"
+                variant="contained"
+                disabled={props.page === "/"}
+                onClick={handleButtonClick}
+                sx={{
+                  margin: "0 auto",
+                  display: "block",
+                  width: "fit-content",
+                }}
+              >
+                See online version
+              </Button>
+            </span>
+          </Tooltip>
           <Accordion
             sx={{
               boxShadow: "none",
@@ -57,7 +84,7 @@ function Project(props) {
             ></AccordionSummary>
             <AccordionDetails>
               {/* <p>[More about the project]</p> */}
-              <h4>Skills used in this project:</h4>
+              <h4>Tools used in this project:</h4>
               <div className="skills">
                 {skills.map((skill, index) => {
                   return (
