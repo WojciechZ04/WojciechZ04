@@ -2,6 +2,7 @@ import Image1 from "../../images/weatherApp.jpg";
 import Image2 from "../../images/Keeper.jpg";
 import Image3 from "../../images/ToDoList.jpg";
 import Image4 from "../../images/RecipeBook.jpg";
+import Image5 from "../../images/ProjectManager.jpg";
 
 // let InWorkImage = "https://static.vecteezy.com/system/resources/previews/000/552/199/original/gears-vector-icon.jpg"
 
@@ -16,12 +17,21 @@ let skills1 = [
 	"API",
 	"Render"
   ];
-  let skills2 = ["HTML", "CSS", "JavaScript", "React, Render"];
-  let skills3 = ["HTML", "CSS", "JavaScript", "SQL Database", "MongoDB", "EJS"];
-  let skills4 = ["HTML", "Bootstrap", "TypeScript", "Angular", "Firebase", "Authentication", "noSQL Database"];
-  
+  let skills2 = ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "GitHub"];
+  let skills3 = ["HTML", "CSS", "JavaScript", "SQL Database", "MongoDB", "EJS", "GitHub"];
+  let skills4 = ["HTML", "Bootstrap", "TypeScript", "Angular", "Firebase", "Authentication", "noSQL Database", "GitHub"];
+  let skills5 = ["HTML", "CSS", "JavaScript", "React", "Render", "Authentication", "SQL", "MySQL", "GitHub"];
 
 const projectsData = [
+	{
+		image: Image5,
+		title: 'Project Manager',
+		description: "Simple project manager with full authentication, where you can create your own projects and tasks related to them. The app allows full CRUD operations. There is also simple account management.",
+		github: "https://github.com/WojciechZ04/project-manager",
+		skills: skills5,
+		page: 'https://project-manager-6nfq.onrender.com/login'
+
+	},
 	{
 		image: Image4,
 		title: 'Recipe Book',
